@@ -1,104 +1,112 @@
-🌍 Web-Based Travel Expense Tracker
-📖 Overview
+# 🌍 WEB-BASED TRAVEL EXPENSE TRACKER
 
-Web-Based Travel Expense Tracker is a backend REST API application developed using Spring Boot and Spring Data JPA.
-This system allows users/admins to manage travel-related expenses efficiently by tracking, updating, and organizing expense details through RESTful APIs.
+## 📌 PROJECT OVERVIEW
 
-The project follows a layered architecture:
-Controller → Service → Repository → Entity
+The **Web-Based Travel Expense Tracker** is a backend REST API application developed using **Spring Boot** and **Spring Data JPA**.
+This system enables efficient tracking and management of travel-related expenses through structured RESTful APIs.
 
-🚀 Features
+The application follows a layered architecture:
+  ### ➜ Controller → Service → Repository → Entity
 
-✅ Add travel expense details
+## 🚀 KEY FEATURES
+### ✅ Expense Management
+  * Add new travel expenses
+  * View all expenses
+  * Update expense details
+  * Delete expense records
 
-✅ View all expenses
+### ✅ Admin Management
+  * Create admin records
+  * Manage system data
 
-✅ Update expense records
+### ✅ Backend Architecture
+  * RESTful API design
+  * Layered structure
+  * Database integration using JPA
 
-✅ Delete expense records
+## 🛠️ TECHNOLOGIES USED
+### 🔹 Backend
+  * Java
+  * Spring Boot
+  * Spring Data JPA
 
-✅ Admin management
+### 🔹 Build Tool
+  * Maven
 
-✅ RESTful API architecture
+### 🔹 Database
+  * MySQL 
 
-✅ Database integration using JPA
+## 📂 PROJECT STRUCTURE
 
-🛠️ Tech Stack
-
-Java
-
-Spring Boot
-
-Spring Data JPA
-
-Maven
-
-MySQL / H2 Database
-
-REST APIs
-
-📂 Project Structure
+```
 project/
 │── controller/
-│     ├── AdminController.java
-│     ├── CommentsController.java
-│
 │── service/
-│     ├── AdminService.java
-│     ├── CommentsService.java
-│
 │── repository/
-│     ├── AdminRepository.java
-│     ├── CommentsRepository.java
-│
 │── entity/
-│     ├── AdminEntity.java
-│     ├── CommentsEntity.java
-│
 │── application.properties
 │── pom.xml
-⚙️ Setup & Installation
-1️⃣ Clone the repository
+```
+
+## ⚙️ HOW TO RUN THE PROJECT
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/your-repo-name.git
-2️⃣ Configure Database
+```
 
-Update application.properties:
+---
 
+### 2️⃣ Configure Database
+
+Update `application.properties`:
+
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/travel_expense_db
 spring.datasource.username=root
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-3️⃣ Run the Application
+```
+
+---
+
+### 3️⃣ Run the Application
+
+```bash
 mvn spring-boot:run
+```
 
-Server runs at:
+Server will start at:
 
+```
 http://localhost:8080
-📡 Sample API Endpoints
-Expense Management
+```
 
-POST /expenses – Add expense
+---
 
-GET /expenses – View all expenses
+## 📡 SAMPLE API ENDPOINTS
 
-PUT /expenses/{id} – Update expense
+### 📌 Expense APIs
 
-DELETE /expenses/{id} – Delete expense
+* `POST /expenses`
+* `GET /expenses`
+* `PUT /expenses/{id}`
+* `DELETE /expenses/{id}`
 
-Admin Management
+### 📌 Admin APIs
 
-POST /admin
+* `POST /admin`
+* `GET /admin`
 
-GET /admin
+---
 
-📌 Future Enhancements
+## 🔮 FUTURE ENHANCEMENTS
 
-🔐 Authentication & Authorization (Spring Security)
+* 🔐 Add Authentication & Authorization
+* 📊 Expense Analytics Dashboard
+* 📄 Report Generation (PDF/Excel)
+* 🌐 Frontend Integration
+* 🐳 Docker Deployment
 
-📊 Expense summary & analytics
+---
 
-📄 PDF/Excel report generation
-
-🌐 Frontend integration (React/Angular)
-
-🐳 Docker deployment
